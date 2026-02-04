@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh CLB Cầu Lông</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS riêng cho trang Album */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid #333;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .back-btn:hover {
+            background: #333;
+            color: white;
+        }
+
+        /* Lưới hiển thị ảnh (Grid) */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Tự động chia cột */
+            gap: 15px;
+        }
+
+        .photo-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .photo-item:hover {
+            transform: scale(1.03);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 250px; /* Chiều cao cố định để lưới đều nhau */
+            object-fit: cover; /* Cắt ảnh vừa khung mà không bị méo */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background: #2c3e50; color: white; padding: 20px; text-align: center;">
+        <h1>Thư Viện Ảnh CLB Cầu Lông</h1>
+    </header>
+
+    <div class="gallery-container">
+        <a href="index.html" class="back-btn">← Quay lại trang chủ</a>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="caulong/1.jpg" alt="Ảnh cầu lông 1">
+            </div>
+
+            <div class="photo-item">
+                <img src="caulong/2.jpg" alt="Ảnh cầu lông 2">
+            </div>
+
+            <div class="photo-item">
+                <img src="caulong/3.jpg" alt="Ảnh cầu lông 3">
+            </div>
+
+            <div class="photo-item">
+                <img src="caulong/4.jpg" alt="Ảnh cầu lông 4">
+            </div>
+            <div class="photo-item">
+                <img src="caulong/4.jpg" alt="Ảnh cầu lông 4">
+            </div>
+            <div class="photo-item">
+                <img src="caulong/5.jpg" alt="Ảnh cầu lông 5">  
+            </div>
+            <div class="photo-item">
+                <img src="caulong/6.jpg" alt="Ảnh cầu lông 6">
+            </div>
+            <div class="photo-item">
+                <img src="caulong/7.jpg" alt="Ảnh cầu lông 6">
+            </div>
+            <div class="photo-item">
+                <img src="caulong/8.jpg" alt="Ảnh cầu lông 6">
+            </div>
+            <div class="photo-item">
+                <img src="caulong/9.jpg" alt="Ảnh cầu lông 6">
+            </div>
+    </div>
+
+</body>
+</html>

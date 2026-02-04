@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh CLB Bóng Chuyền</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS cho lưới ảnh (Grid) */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid #333;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #333;
+            color: white;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .photo-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .photo-item:hover {
+            transform: scale(1.03);
+        }
+        .photo-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header style="background: #f39c12; color: white; padding: 20px; text-align: center;">
+        <h1>Thư Viện Ảnh CLB Bóng Chuyền</h1>
+    </header>
+
+    <div class="gallery-container">
+        <a href="index.html" class="back-btn">← Quay lại trang chủ</a>
+
+        <div class="photo-grid">
+            <div class="photo-item"><img src="bongchuyen/1.jpg" alt="Bóng chuyền 1"></div>
+            <div class="photo-item"><img src="bongchuyen/2.jpg" alt="Bóng chuyền 2"></div>
+            <div class="photo-item"><img src="bongchuyen/3.jpg" alt="Bóng chuyền 3"></div>
+            <div class="photo-item"><img src="bongchuyen/4.jpg" alt="Bóng chuyền 4"></div>
+            <div class="photo-item"><img src="bongchuyen/5.jpg" alt="Bóng chuyền 5"></div>
+            <div class="photo-item"><img src="bongchuyen/6.jpg" alt="Bóng chuyền 6"></div>
+            <div class="photo-item"><img src="bongchuyen/7.jpg" alt="Bóng chuyền 7"></div>
+            <div class="photo-item"><img src="bongchuyen/8.jpg" alt="Bóng chuyền 8"></div>
+            <div class="photo-item"><img src="bongchuyen/9.jpg" alt="Bóng chuyền 9"></div>
+        </div>
+    </div>
+</body>
+</html>
